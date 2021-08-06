@@ -17,7 +17,7 @@ function App() {
       <div className='App-body'>
         <button onClick={() => setShowComponent(true)}>Show Component</button>
         <Suspense fallback={<div>Loading...</div>}>
-          {showComponent && ComponentA}
+          {showComponent && <ComponentA />}
         </Suspense>
       </div>
     </div>
